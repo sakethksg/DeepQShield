@@ -114,6 +114,24 @@ Final Dataset/
 └── dataset.csv    # Image paths and labels
 ```
 
+#### Available Datasets
+
+The framework can be trained on various deepfake detection datasets:
+
+1. **140K Real and Fake Faces (DFDC)**  
+   https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces  
+   Primary dataset used in this implementation with 70,000 real and 70,000 fake face images.
+
+2. **Celeb-DF (V2)**  
+   https://www.kaggle.com/datasets/reubensuju/celeb-df-v2  
+   High-quality deepfake dataset featuring celebrity faces with diverse manipulation techniques.
+
+3. **FaceForensics++ (FF++)**  
+   https://www.kaggle.com/datasets/greatgamedota/faceforensics  
+   Comprehensive benchmark dataset with multiple deepfake generation methods including DeepFakes, Face2Face, FaceSwap, and NeuralTextures.
+
+**Note**: Adjust the data paths in the configuration (Cell 5) when using alternative datasets.
+
 ### 2. Model Training
 
 Execute the notebook cells sequentially:
