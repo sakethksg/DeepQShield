@@ -2,46 +2,6 @@
 
 **A Quantum-Resilient Deepfake Detection Framework Using Lattice-Enhanced ResNeXt and Post-Quantum Cryptography Defense**
 
----
-
-## Abstract
-
-DeepQShield is a novel deepfake detection framework that combines advanced deep learning with post-quantum cryptographic security. The system integrates a lattice-based learning module with ResNeXt-50 architecture for robust deepfake detection and employs NIST-standardized post-quantum cryptographic algorithms (Kyber-1024 and Dilithium-5) to ensure detection results remain secure in the quantum computing era.
-
----
-
-## Table of Contents
-
-1. [System Architecture](#system-architecture)
-2. [Technical Components](#technical-components)
-3. [Installation & Setup](#installation--setup)
-4. [Usage Instructions](#usage-instructions)
-5. [Reproducibility](#reproducibility)
-6. [Performance Metrics](#performance-metrics)
-7. [File Structure](#file-structure)
-8. [Dependencies](#dependencies)
-9. [Citation](#citation)
-
----
-
-## System Architecture
-
-DeepQShield consists of two primary components:
-
-### 1. **Lattice-Enhanced Deep Learning Detector**
-- **Base Architecture**: ResNeXt-50 pre-trained on ImageNet
-- **Novel Component**: Lattice-based learning module implementing Learning with Errors (LWE) concepts
-- **Feature Enhancement**: Attention mechanism for adaptive feature weighting
-- **Security Integration**: Cryptographic lattice principles embedded in neural network layers
-
-### 2. **Post-Quantum Cryptographic Security Layer**
-- **Key Encapsulation**: CRYSTALS-Kyber (NIST Level 5 security)
-- **Digital Signatures**: CRYSTALS-Dilithium (NIST Level 5 security)
-- **Hybrid Approach**: Combines classical and post-quantum algorithms for maximum security
-- **Forensic Compliance**: Generates legally admissible cryptographic proofs
-
----
-
 ## Technical Components
 
 ### Lattice-Based Learning Module
@@ -355,30 +315,7 @@ liboqs-python >= 0.8.0    # NIST-standardized PQC algorithms
 cryptography >= 41.0.0    # Classical cryptography support
 ```
 
-**Note**: If `liboqs-python` is not available, the system falls back to a simplified implementation suitable for demonstration purposes. For production deployment, installing `liboqs-python` is **strongly recommended**.
-
----
-
-## Key Innovations
-
-### 1. Lattice-Based Deep Learning
-- **Novel Integration**: First framework to integrate cryptographic lattice principles directly into deepfake detection neural networks
-- **Theoretical Foundation**: Based on Learning with Errors (LWE) hardness assumptions
-- **Dual Purpose**: Provides both detection robustness and theoretical quantum resistance
-
-### 2. Post-Quantum Security
-- **NIST-Standardized**: Uses officially standardized PQC algorithms
-- **Hybrid Approach**: Combines classical and quantum-resistant cryptography
-- **Forensic Grade**: Generates legally admissible cryptographic proofs
-- **Future-Proof**: Resistant to both classical and quantum attacks
-
-### 3. End-to-End Framework
-- **Complete Pipeline**: From raw images to cryptographically secured detection results
-- **Production Ready**: Optimized for real-world deployment with <25ms inference
-- **Scalable**: Supports batch processing and parallel execution
-- **Auditable**: Comprehensive logging and chain of custody tracking
-
----
+**Note**: If `liboqs-python` is not available, the system falls back to a simplified implementation suitable for demonstration purposes. For correctly checking cryptographic operations, installing `liboqs-python` is **strongly recommended**.
 
 ## Testing
 
@@ -405,15 +342,6 @@ Run the notebook sequentially to verify:
 4. Cryptographic operations function correctly
 5. Model export succeeds
 
-## Acknowledgments
-
-- **Dataset**: 140K Real and Fake Faces from Kaggle (xhlulu/140k-real-and-fake-faces)
-- **PQC Algorithms**: CRYSTALS-Kyber and CRYSTALS-Dilithium (NIST PQC standardization)
-- **Deep Learning Framework**: PyTorch and timm library
-- **Pre-trained Models**: ResNeXt-50 from ImageNet
-
----
-
 ## Reviewer Notes
 
 ### For Reproducibility Verification
@@ -437,3 +365,24 @@ Run the notebook sequentially to verify:
 - **Cryptographic Correctness**: Verified through NIST standardization process
 
 ---
+## Authors
+
+**Corresponding Author:**
+- **Brindha Subburaj** - brindha.s@vit.ac.in  
+  Vellore Institute of Technology, India
+
+**Co-Authors:**
+- **Kollipara Naga Shreeya** - kollipara.naga2023@vitstudent.ac.in  
+  Vellore Institute of Technology, India
+
+- **Kollipara Sai Govinda Saketh** - Kollipara.sai2023@vitstudent.ac.in  
+  Vellore Institute of Technology, India
+
+- **T V Padmavathy** - padmavathy.tv@vit.ac.in  
+  Vellore Institute of Technology, India
+
+- **Sherly Alphonse** - sherly.a@vit.ac.in  
+  Vellore Institute of Technology, India
+
+- **Girish Subramanian** - ghs2@psu.edu  
+  Penn State Harrisburg, United States
