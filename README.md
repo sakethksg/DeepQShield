@@ -385,12 +385,10 @@ Run the notebook sequentially to verify:
 ---
 ## Authors
 
-**Corresponding Author:**
-- **Brindha Subburaj** - brindha.s@vit.ac.in  
+- **Kollipara Naga Shreeya** - kollipara.naga2023@vitstudent.ac.in  
   Vellore Institute of Technology, India
 
-**Co-Authors:**
-- **Kollipara Naga Shreeya** - kollipara.naga2023@vitstudent.ac.in  
+- **Brindha Subburaj** - brindha.s@vit.ac.in  
   Vellore Institute of Technology, India
 
 - **Kollipara Sai Govinda Saketh** - Kollipara.sai2023@vitstudent.ac.in  
